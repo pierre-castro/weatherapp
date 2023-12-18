@@ -92,7 +92,7 @@ const WeatherApp = () => {
         const location = document.getElementsByClassName("weather-location");
         
         humidity[0].innerHTML = data.main.humidity + " %";
-        wind[0].innerHTML = Math.floor(data.wind.speed) + " km/h";
+        wind[0].innerHTML = data.wind.speed + " m/sec";
         temperature[0].innerHTML = Math.round(data.main.temp * 10) / 10 + " °c";
         location[0].innerHTML = data.name;
         
